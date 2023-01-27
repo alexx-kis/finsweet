@@ -471,7 +471,7 @@ body {
   line-height: 72px;
   color: #fff;
   display: block;
-  background: url("/img/section/circle.svg");
+  background: url("../img/section/circle.svg");
   width: 72px;
   height: 72px;
   position: absolute;
@@ -515,7 +515,7 @@ body {
 
 /*=================================== CONTACT =========================================*/
 .contact {
-  background: url("/img/contact/image-2.jpg") no-repeat 100% 0/auto 501.5px, url("/img/contact/image-1.jpg") no-repeat 0% 0px/auto 501.5px;
+  background: url("../img/contact/image-2.jpg") no-repeat 100% 0/auto 501.5px, url("../img/contact/image-1.jpg") no-repeat 0% 0px/auto 501.5px;
 }
 .contact__content {
   background: #FF6433;
