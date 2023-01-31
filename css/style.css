@@ -987,7 +987,7 @@ body {
 .image-box {
   height: 448px;
   margin-top: -300px;
-  background: url("../img/img-before-footer.jpg") no-repeat;
+  background: url("../img/img-before-footer.jpg") no-repeat center;
 }
 
 /*=================================== FOOTER ============================================*/
