@@ -862,13 +862,13 @@ body {
   transition: all 0.3s;
 }
 .questions__acc-info {
-  cursor: pointer;
   width: 100%;
 }
 .questions__acc-item:last-child {
   margin-bottom: 0px;
 }
 .questions__acc-heading {
+  cursor: pointer;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -882,12 +882,10 @@ body {
   font-size: 18px;
   line-height: 175%;
   color: #939191;
-  display: none;
-  transition: all 0.3s;
   padding-right: 65px;
-}
-.questions__acc-text--open {
-  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 .questions__acc-button-box {
   width: 50px;
@@ -897,26 +895,27 @@ body {
   background: #FF6433;
   width: 50px;
   height: 50px;
+  position: relative;
 }
-.questions__acc-button::before {
-  content: "";
-  display: block;
+.questions__acc-line {
+  background: #fff;
+  position: absolute;
+  transition: all 0.3s;
+}
+.questions__acc-line--horizontal {
   width: 18px;
   height: 2px;
-  background: #fff;
-  transform: translate(17px);
+  top: 23px;
+  left: 15px;
 }
-.questions__acc-button::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: #fff;
-  transform: translate(17px, -1px) rotate(90deg);
+.questions__acc-line--vertical {
+  width: 2px;
+  height: 18px;
+  top: 15px;
+  left: 23px;
 }
-
-.questions__acc-link--active .questions__acc-head::after {
-  transform: rotate(0deg);
+.questions__acc-line--active {
+  transform: rotate(90deg);
 }
 
 /*=================================== GET IN TOUCH ======================================*/
@@ -990,10 +989,10 @@ body {
 }
 
 /*================================== IMAGE BOX ========================================*/
-.image-box {
+.image-box__image {
   height: 448px;
   margin-top: -300px;
-  background: url("../img/img-before-footer.jpg") no-repeat;
+  background: url("../img/img-before-footer.jpg") no-repeat center;
 }
 
 /*=================================== FOOTER ============================================*/
