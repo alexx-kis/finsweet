@@ -37,21 +37,6 @@ $(function () {
 	})
 
 
-
-	$('.questions__acc-info').on('click', function (e) {
-		e.preventDefault()
-		if ($(this).hasClass('questions__acc-item--active')) {
-			$(this).removeClass('questions__acc-item--active')
-			$(this).children('.questions__acc-text').slideUp()
-		} else {
-			$('.questions__acc-item').removeClass('questions__acc-item--active')
-			$('.questions__acc-text').slideUp()
-			$(this).addClass('questions__acc-item--active')
-			$(this).children('.questions__acc-text').slideDown()
-		}
-	})
-
-
 	$('.burger, .overlay, .header__top ').on('click', function (e) {
 		e.preventDefault()
 		$('.header__top').toggleClass('header__top--open')
@@ -60,4 +45,24 @@ $(function () {
 	})
 
 })
+
+//new acc
+let accHeadings = document.querySelectorAll('.questions__acc-heading');
+let lines = document.querySelectorAll('.questions__acc-line--vertical');
+let accItems = document.querySelectorAll('.questions__acc-item');
+
+for (let i = 0; i < accHeadings.length; i++) {
+	accHeadings[i].addEventListener('click', function () {
+
+		accItems[i].classList.toggle('question__acc-item--active');
+
+		lines[i].classList.toggle('questions__acc-line--active');
+		let text = this.nextElementSibling;
+		if (text.style.maxHeight) {
+			text.style.maxHeight = null;
+		} else {
+			text.style.maxHeight = text.scrollHeight + "px";
+		}
+	});
+}
 
