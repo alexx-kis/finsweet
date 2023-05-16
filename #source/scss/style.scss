@@ -959,15 +959,19 @@ body {
 
 	&__acc-info {
 		// margin-right: 64px;
-		cursor: pointer;
 		width: 100%;
 	}
-
+	
 	&__acc-item:last-child {
 		margin-bottom: 0px;
 	}
 
+	&__acc-item--active {
+
+	}
+	
 	&__acc-heading {
+		cursor: pointer;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 36px;
@@ -983,13 +987,10 @@ body {
 		font-size: 18px;
 		line-height: 175%;
 		color: #939191;
-		display: none;
-		transition: all .3s;
 		padding-right: 65px;
-	}
-
-	&__acc-text--open {
-		display: block;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
 	}
 
 	&__acc-button-box {
@@ -1001,28 +1002,32 @@ body {
 		background: #FF6433;
 		width: 50px;
 		height: 50px;
+		position: relative;
 	}
 
-	&__acc-button::before {
-		content: "";
-		display: block;
-		width: 18px;
-		height: 2px;
+	&__acc-line {
 		background: #fff;
-		transform: translate(17px);
+		position: absolute;
+		transition: all .3s;
 	}
 
-	&__acc-button::after {
-		content: "";
-		display: block;
+	&__acc-line--horizontal {
 		width: 18px;
 		height: 2px;
-		background: #fff;
-		transform: translate(17px, -1px) rotate(90deg);
+		top: 23px;
+		left: 15px;
 	}
-}
-.questions__acc-link--active .questions__acc-head::after {
-	transform: rotate(0deg);
+
+	&__acc-line--vertical {
+		width: 2px;
+		height: 18px;
+		top: 15px;
+		left: 23px;
+	}
+
+	&__acc-line--active {
+		transform: rotate(90deg);
+	}
 }
 
 /*=================================== GET IN TOUCH ======================================*/
@@ -1109,10 +1114,10 @@ body {
 
 /*================================== IMAGE BOX ========================================*/
 
-.image-box {
+.image-box__image {
 	height: 448px;
 	margin-top: -300px;
-	background: url('../img/img-before-footer.jpg') no-repeat;
+	background: url('../img/img-before-footer.jpg') no-repeat center;
 }
 
 /*=================================== FOOTER ============================================*/
