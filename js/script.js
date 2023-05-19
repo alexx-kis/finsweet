@@ -38,7 +38,6 @@ $(function () {
 
 
 	$('.burger, .overlay, .header__top ').on('click', function (e) {
-		e.preventDefault()
 		$('.header__top').toggleClass('header__top--open')
 		$('.overlay').toggleClass('overlay--show')
 		$('.burger').toggleClass('burger--open')
