@@ -957,16 +957,17 @@ body {
 
 	}
 
+
 	&__acc-info {
 		// margin-right: 64px;
 		width: 100%;
 	}
-	
+
 	&__acc-item:last-child {
 		margin-bottom: 0px;
 	}
 
-	
+
 	&__acc-heading {
 		cursor: pointer;
 		font-weight: 600;
@@ -985,10 +986,12 @@ body {
 		line-height: 175%;
 		color: #939191;
 		padding-right: 65px;
-		max-height: 0;
+		height: 0px;
 		overflow: hidden;
-		transition: max-height 0.2s ease-out;
+		transition: all 0.2s ease-out;
 	}
+
+
 
 	&__acc-button-box {
 		width: 50px;
@@ -1022,8 +1025,14 @@ body {
 		left: 23px;
 	}
 
-	&__acc-line--active {
-		transform: rotate(90deg);
+	&__acc-item--active {
+		.questions__acc-text {
+			height: 100px;
+		}
+
+		.questions__acc-line--vertical {
+			transform: rotate(90deg);
+		}
 	}
 }
 
