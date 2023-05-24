@@ -92,14 +92,6 @@ body {
   padding: 0 30px;
 }
 
-.heading {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 84px;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
-}
-
 .button {
   display: block;
   font-weight: 600;
@@ -124,7 +116,32 @@ body {
   display: none;
 }
 
+.main-heading {
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 84px;
+  color: #1E1B1B;
+}
+
+.heading__title {
+  letter-spacing: -0.03em;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 76px;
+  color: #1E1B1B;
+}
+.heading__subtitle {
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: #1E1B1B;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
 /*=================================== HEADER ==========================================*/
+/*==================================== HEADER TOP ====================================*/
 .header__top {
   margin-bottom: 80px;
 }
@@ -211,6 +228,7 @@ body {
   opacity: 0.7;
 }
 
+/*==================================== HEADER BODY ====================================*/
 .header__body {
   margin-bottom: 135px;
 }
@@ -229,12 +247,7 @@ body {
   max-width: 624px;
   margin-right: 20px;
 }
-.header__body-title {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 84px;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
+.header__body-heading {
   margin-bottom: 32px;
   margin-right: 15px;
 }
@@ -378,29 +391,21 @@ body {
 .offers {
   background: #F2F2F2;
   padding-bottom: 128px;
+  padding-top: 120px;
 }
 .offers__heading {
-  padding-top: 120px;
   margin-bottom: 64px;
 }
-.offers__subtitle {
-  font-weight: 600;
+.offers__heading-title {
+  max-width: 858px;
+  text-align: center;
+  margin: 0 auto;
+}
+.offers__heading-subtitle {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
   margin-bottom: 8px;
-}
-.offers__title {
-  max-width: 858px;
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
-  margin: 0 auto;
 }
 .offers__cervices {
   margin-bottom: 32px;
@@ -519,22 +524,15 @@ body {
 .process__content {
   max-width: 524px;
 }
-.process__title {
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
+.process__heading-title {
   margin-bottom: 16px;
 }
-.process__subtitle {
-  font-weight: 600;
+.process__heading-subtitle {
+  text-align: left;
   font-size: 16px;
   line-height: 28px;
-  color: #1E1B1B;
   opacity: 0.6;
   margin-bottom: 32px;
-  letter-spacing: -0.03em;
 }
 .process__button {
   width: 177px;
@@ -606,12 +604,12 @@ body {
   min-height: 502px;
   padding: 128px 0 122px;
 }
-.contact__title {
+.contact__heading-title {
   max-width: 569px;
+  text-align: left;
   font-weight: 700;
   font-size: 48px;
   line-height: 140%;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
   margin: 0 80px 48px;
 }
@@ -672,13 +670,8 @@ body {
   padding: 128px 0 132px;
   background: #E2E6E9;
 }
-.brands__title {
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
+.brands__heading-title {
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
   margin-bottom: 31px;
 }
 .brands__grid {
@@ -723,12 +716,7 @@ body {
 .blog__heading {
   margin-bottom: 47px;
 }
-.blog__title {
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
+.blog__heading-title {
   cursor: pointer;
 }
 .blog__filter-box {
@@ -832,15 +820,10 @@ body {
   padding-top: 130px;
   margin-bottom: 74px;
 }
-.customers__title {
+.customers__heading-title {
   margin: 0 auto;
-  max-width: 785px;
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
+  max-width: 795px;
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
 }
 .customers__slider {
   margin: 0 -24px;
@@ -992,13 +975,8 @@ body {
 .questions__heading {
   margin-bottom: 85px;
 }
-.questions__title {
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
+.questions__heading-title {
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #1E1B1B;
 }
 .questions__acc {
   padding: 10px;
@@ -1096,6 +1074,11 @@ body {
 .getintouch__heading {
   max-width: 507px;
   margin-bottom: 48px;
+}
+.getintouch__heading-title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 84px;
 }
 .getintouch__body {
   display: -webkit-box;
@@ -1202,7 +1185,7 @@ body {
 .footer__top-body {
   max-width: 463px;
 }
-.footer__top-heading {
+.footer__top-heading-title {
   font-weight: 700;
   font-size: 48px;
   line-height: 140%;
@@ -1312,14 +1295,16 @@ body {
   .container {
     padding: 0 20px;
   }
-  .title {
+  .heading__title {
     font-size: 48px;
+  }
+  .main-heading {
+    font-size: 50px;
   }
   .header__body-image img {
     max-width: 500px;
   }
-  .header__body-title {
-    font-size: 50px;
+  .header__body-heading {
     max-width: 440px;
   }
   .table {
@@ -1335,7 +1320,7 @@ body {
     top: 370px;
     right: -33px;
   }
-  .offers__heading {
+  .offers {
     padding-top: 60px;
   }
 }
@@ -1360,11 +1345,11 @@ body {
   }
 }
 @media (max-width: 1000px) {
+  .main-heading {
+    font-size: 40px;
+  }
   .header__body-image img {
     max-width: 400px;
-  }
-  .header__body-title {
-    font-size: 40px;
   }
   .table {
     -webkit-transform: scale(70%);
@@ -1388,7 +1373,7 @@ body {
   .contact__row {
     padding: 30px;
   }
-  .contact__title {
+  .contact__heading-title {
     margin: 0 59px 40px;
   }
   .contact__row-item:last-child {
@@ -1397,6 +1382,9 @@ body {
   .brands__grid {
     grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
     row-gap: 10px;
+  }
+  .heading__title {
+    font-size: 28px;
   }
   .blog {
     padding: 40px 0;
@@ -1407,9 +1395,6 @@ body {
   }
   .blog__grid-item {
     max-width: 100%;
-  }
-  .blog__grid-title {
-    font-size: 28px;
   }
   .blog__filter-button {
     font-size: 24px;
@@ -1461,6 +1446,9 @@ body {
   }
 }
 @media (max-width: 900px) {
+  .main-heading {
+    line-height: 180%;
+  }
   .overlay {
     position: fixed;
     top: 0;
@@ -1602,9 +1590,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header__body-title {
+  .header__body-heading {
     max-width: 400px;
-    line-height: 180%;
   }
   .title {
     font-size: 40px;
@@ -1721,11 +1708,11 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .main-heading {
+    font-size: 30px;
+  }
   .header__top {
     width: 100%;
-  }
-  .header__body-title {
-    font-size: 30px;
   }
   .header__body-image img {
     max-width: 300px;
