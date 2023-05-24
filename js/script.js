@@ -45,26 +45,6 @@ $(function () {
 
 })
 
-//old acc
-// let accHeadings = document.querySelectorAll('.questions__acc-heading');
-// let lines = document.querySelectorAll('.questions__acc-line--vertical');
-// let accItems = document.querySelectorAll('.questions__acc-item');
-
-// for (let i = 0; i < accHeadings.length; i++) {
-// 	accHeadings[i].addEventListener('click', function () {
-
-// 		accItems[i].classList.toggle('question__acc-item--active');
-
-// 		lines[i].classList.toggle('questions__acc-line--active');
-// 		let text = this.nextElementSibling;
-// 		if (text.style.maxHeight) {
-// 			text.style.maxHeight = null;
-// 		} else {
-// 			text.style.maxHeight = text.scrollHeight + "px";
-// 		}
-// 	});
-// }
-
 let links = document.querySelectorAll('.questions__acc-heading');
 
 for (let link of links) {

@@ -1297,6 +1297,7 @@ body {
   }
   .heading__title {
     font-size: 48px;
+    /*------------------------------  ------------------------------*/
   }
   .main-heading {
     font-size: 50px;
@@ -1347,6 +1348,7 @@ body {
 @media (max-width: 1000px) {
   .main-heading {
     font-size: 40px;
+    /*------------------------------  ------------------------------*/
   }
   .header__body-image img {
     max-width: 400px;
@@ -1382,6 +1384,9 @@ body {
   .brands__grid {
     grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
     row-gap: 10px;
+  }
+  .heading {
+    /*------------------------------  ------------------------------*/
   }
   .heading__title {
     font-size: 28px;
@@ -1593,13 +1598,13 @@ body {
   .header__body-heading {
     max-width: 400px;
   }
-  .title {
+  .heading__title {
     font-size: 40px;
   }
   .customers__slide {
     padding: 40px;
   }
-  .customers__title {
+  .customers__heading-title {
     max-width: 540px;
   }
   .footer__bottom-nav {
@@ -1703,6 +1708,9 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .customers__text {
+    font-size: 20px;
+  }
   .customers__slider-arrows {
     display: none;
   }
@@ -1738,11 +1746,11 @@ body {
     top: 182px;
     left: 71px;
   }
-  .title {
+  .heading__title {
     font-size: 30px;
     line-height: 50px;
   }
-  .subtitle {
+  .heading__subtitle {
     font-size: 20px;
   }
   .offers__cervices-inner {
@@ -1783,6 +1791,9 @@ body {
   }
   .brands__item {
     height: 70px;
+  }
+  .customers__text {
+    font-size: 18px;
   }
   .footer__bottom-inner {
     -webkit-box-orient: vertical;
