@@ -90,6 +90,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 30px;
+  height: 100%;
 }
 
 .button {
@@ -149,6 +150,8 @@ body {
   opacity: 0;
   -webkit-transition: all 0.5s 2.3s;
   transition: all 0.5s 2.3s;
+  position: absolute;
+  width: 100%;
 }
 .header__top-inner {
   display: -webkit-box;
@@ -233,7 +236,8 @@ body {
 
 /*==================================== HEADER BODY ====================================*/
 .header__body {
-  margin-bottom: 135px;
+  height: 910px;
+  min-height: 100vh;
 }
 .header__body-inner {
   display: -webkit-box;
@@ -245,6 +249,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 .header__body-content {
   max-width: 624px;
