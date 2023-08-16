@@ -79,18 +79,15 @@ window.onload = function () {
 
 		//arrows
 
-		$('.customers__slider-prev').on('click', function (event) {
-			// if (event.cancelable) event.preventDefault();
+		$('.customers__slider-prev').on('click', function () {
 			$('.customers__slider').slick('slickPrev')
 		})
-		$('.customers__slider-next').on('click', function (event) {
-			// if (event.cancelable) event.preventDefault();
+		$('.customers__slider-next').on('click', function () {
 			$('.customers__slider').slick('slickNext')
 		})
 
 
-		$('.burger, .overlay, .header__top ').on('click', function (event) {
-			// if (event.cancelable) event.preventDefault();
+		$('.burger, .overlay, .header__top ').on('click', function () {
 			$('.header__top').toggleClass('header__top--open')
 			$('.overlay').toggleClass('overlay--show')
 			$('.burger').toggleClass('burger--open')

@@ -728,6 +728,7 @@ body {
 		transform: scale(0);
 		transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.8);
 	}
+
 	&__filter-button {
 		background: transparent;
 		font-weight: 700;
@@ -833,9 +834,13 @@ body {
 		position: relative;
 	}
 
+	&__slider-inner {
+		transform: scale(0);
+	}
+
 	&__slide-inner {
 		padding: 24px;
-		transform: scale(0);
+
 	}
 
 	&__slide {
@@ -936,6 +941,7 @@ body {
 	}
 
 	&__slider-arrow {
+		cursor: pointer;
 		border-radius: 50%;
 		display: block;
 		line-height: 0;
@@ -1170,10 +1176,10 @@ body {
 	}
 
 	&__map {
-			position: relative;
-			z-index: 100;
-			// transform: scale(0);
-			// transition-delay: 1s;
+		position: relative;
+		z-index: 100;
+		// transform: scale(0);
+		// transition-delay: 1s;
 	}
 
 	&__map iframe {
@@ -1269,6 +1275,7 @@ body {
 		transform: translate(100px, 0);
 		transition-delay: 1s;
 	}
+
 	&__top-text {
 		font-weight: 600;
 		font-size: 24px;
